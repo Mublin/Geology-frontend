@@ -1,0 +1,30 @@
+:root {
+  --color-action: #08a7fd;
+  --color-tertiary: #02669d;
+  --color-secondary: #000000;
+  --pic-senate: url(https://www.buk.edu.ng/sites/default/files/inline-images/edwe.jpg);
+  --pic-level1: url(https://github.com/Mublin/geology-buk/blob/main/frontend1/src/assets/IMG_3417.JPG?raw=true);
+  --pic-level2: url(https://github.com/Mublin/geology-buk/blob/main/frontend1/src/assets/IMG_3418.JPG?raw=true);
+  --pic-level3: url(https://github.com/Mublin/geology-buk/blob/main/frontend1/src/assets/IMG_3419.JPG?raw=true);
+  --pic-level4: url(https://github.com/Mublin/geology-buk/blob/main/frontend1/src/assets/IMG_3420.JPG?raw=true);
+  --pic-about: url(https://github.com/Mublin/geology-buk/blob/main/frontend1/src/assets/IMG_3882.jpg?raw=true);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: var(--color-secondary);
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
