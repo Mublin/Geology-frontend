@@ -15,16 +15,13 @@ const LectureNotesPage = () => {
     const {state} = useContext(UserContext)
     const {userDetails} = state
     const locatiion = useLocation()
-    console.log(locatiion)
     const query = new URLSearchParams(locatiion.search)
     let code = query.get("code") || ""
-    console.log(code);
     const {levelId} = useParams()
     const [lectureNotes, setLectureNotes] = useState<lectureNote[]>([])
     const [isLoading, setIsLoading] = useState<boolean>(true)
     useEffect(() => {
       setIsLoading(true);
-  
       try {
         if (userDetails && !userDetails.dropboxAccessToken) {
           getTokens(code, userDetails);
@@ -36,7 +33,6 @@ const LectureNotesPage = () => {
               const { data } = await api.get(`/files/lecturenotes/${levelId}`);
               const { $values } = data
               if (data) {
-                console.log($values)
                 setLectureNotes($values);
               }
             } catch (error) {

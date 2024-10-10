@@ -8,7 +8,6 @@ const api = axios.create({
 // Request interceptor to attach the access token to every request
 api.interceptors.request.use(
     async (config) => {
-        console.log('Request:', config);
         const user =  JSON.parse(localStorage.getItem('userDetail') as string)
         if (user && user.accessToken) {
             config.headers['Authorization'] = `Bearer ${user.accessToken}`;

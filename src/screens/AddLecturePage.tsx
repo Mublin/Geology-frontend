@@ -37,7 +37,6 @@ const AddLecturePage = () => {
     const submitHandler = async (e: MouseEvent<HTMLFormElement>) =>{
         e.preventDefault()
         if (lectureNote) {
-          console.log(lectureNote.name)
             try {
                 if (level <= 0) {
                   throw Error("Enter Valid Number")

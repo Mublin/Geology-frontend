@@ -32,7 +32,6 @@ const PasswordScreen = () => {
         throw Error("Unable to change password")
       }
     } catch (error) {
-      console.log(error)
       toast.error(getError(error))
     }
   }
